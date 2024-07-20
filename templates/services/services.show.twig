@@ -27,7 +27,7 @@ Zoo Arcadia | Restauration
 {% block body %}
 
 {% if slug == 'visite-guidee' %}
-    <div class="visite-header"></div>
+    <div class="visite-header" style="background-image:url('{{ asset('build/images/visite.jpg') }}')"></div>
 
     <section class="visite">
         <a id="visite-back-button" href="{{ url('services') }}"><</a>
@@ -47,7 +47,7 @@ Zoo Arcadia | Restauration
 {% endif %}
 
 {% if slug == 'visite-petit-train' %}
-    <div class="train-header"></div>
+    <div class="train-header" style="background-image:url('{{ asset('build/images/train.jpg') }}')"></div>
 
     <section class="train">
         <a id="train-back-button" href="{{ url('services') }}"><</a>
@@ -68,7 +68,7 @@ Zoo Arcadia | Restauration
 {% endif %}
 
 {% if slug == 'restauration' %}
-    <div class="food-header"></div>
+    <div class="food-header" style="background-image:url('{{ asset('build/images/food.jpg') }}')"></div>
 
     <section class="food">
         <a id="food-back-button" href="{{ url('services') }}"><</a>

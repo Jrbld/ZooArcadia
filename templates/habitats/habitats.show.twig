@@ -27,7 +27,7 @@ Zoo Arcadia | Les Marais
 {% block body %}
 
 {% if slug == 'jungle' %}
-    <div class="jungle-header"></div>
+    <div class="jungle-header" style="background-image:url('{{ asset('build/images/jungle-2.jpg') }}')"></div>
 
     <section class="jungle">
         <a id="jungle-back-button" href="{{ url('habitats') }}"><</a>
@@ -44,17 +44,17 @@ Zoo Arcadia | Les Marais
             <h2 class="jungle-animals-title">Nos 3 plus anciens compagnons de cet habitat</h2>
             <div class="jungle-animals-cards">
                 <a href="{{ path('habitats.show.animals', {slug: 'jungle', slug2: 'sophie-la-girafe'}) }}">
-                    <div id="girafe-card">
+                    <div id="girafe-card" style="background-image:url('{{ asset('build/images/girafe.jpg') }}')">
                         <p>Sophie</p>
                     </div>
                 </a>
                 <a href="{{ path('habitats.show.animals', {slug: 'jungle', slug2: 'dumbo-l-elephant'}) }}">
-                    <div id="elephant-card">
+                    <div id="elephant-card" style="background-image:url('{{ asset('build/images/elephant.jpg') }}')">
                         <p>Dumbo</p>
                     </div>
                 </a>
                 <a href="{{ path('habitats.show.animals', {slug: 'jungle', slug2: 'georges-le-chimpanze'}) }}">
-                    <div id="monkey-card">
+                    <div id="monkey-card" style="background-image:url('{{ asset('build/images/monkey.jpg') }}')">
                         <p>Georges</p>
                     </div>
                 </a>
@@ -64,7 +64,7 @@ Zoo Arcadia | Les Marais
 {% endif %}
 
 {% if slug == 'savane' %}
-    <div class="savane-header"></div>
+    <div class="savane-header" style="background-image:url('{{ asset('build/images/savane.jpg') }}')"></div>
 
     <section class="savane">
         <a id="savane-back-button" href="{{ url('habitats') }}"><</a>
@@ -81,17 +81,17 @@ Zoo Arcadia | Les Marais
             <h2 class="savane-animals-title">Cet habitat nous offre de très beaux spécimens</h2>
             <div class="savane-animals-cards">
                 <a href="{{ path('habitats.show.animals', {slug: 'savane', slug2: 'simba-le-lion'}) }}">
-                    <div id="lion-card">
+                    <div id="lion-card" style="background-image:url('{{ asset('build/images/lion.jpg') }}')">
                         <p>Simba</p>
                     </div>
                 </a>
                 <a href="{{ path('habitats.show.animals', {slug: 'savane', slug2: 'potam-l-hippopotame'}) }}">
-                    <div id="hipo-card">
+                    <div id="hipo-card" style="background-image:url('{{ asset('build/images/hipo.jpg') }}')">
                         <p>Potam</p>
                     </div>
                 </a>
                 <a href="{{ path('habitats.show.animals', {slug: 'savane', slug2: 'khumba-le-zebre'}) }}">
-                    <div id="zebre-card">
+                    <div id="zebre-card" style="background-image:url('{{ asset('build/images/zebra.jpg') }}')">
                         <p>Khumba</p>
                     </div>
                 </a>
@@ -101,7 +101,7 @@ Zoo Arcadia | Les Marais
 {% endif %}
 
 {% if slug == 'marais' %}
-    <div class="marais-header"></div>
+    <div class="marais-header" style="background-image:url('{{ asset('build/images/marais-2.jpg') }}')"></div>
 
     <section class="marais">
         <a id="marais-back-button" href="{{ url('habitats') }}"><</a>
@@ -118,17 +118,17 @@ Zoo Arcadia | Les Marais
             <h2 class="marais-animals-title">Cet habitat vous réserve son lot de surprises</h2>
             <div class="marais-animals-cards">
                 <a href="{{ path('habitats.show.animals', {slug: 'marais', slug2: 'enzo-le-crocodile'}) }}">
-                    <div id="croco-card">
+                    <div id="croco-card" style="background-image:url('{{ asset('build/images/crocodile.jpg') }}')">
                         <p>Enzo</p>
                     </div>
                 </a>
                 <a href="{{ path('habitats.show.animals', {slug: 'marais', slug2: 'didou-le-flamant-rose'}) }}">
-                    <div id="flamingo-card">
+                    <div id="flamingo-card" style="background-image:url('{{ asset('build/images/flamingo.jpg') }}')">
                         <p>Didou</p>
                     </div>
                 </a>
                 <a href="{{ path('habitats.show.animals', {slug: 'marais', slug2: 'franklin-la-tortue'}) }}">
-                    <div id="turtle-card">
+                    <div id="turtle-card" style="background-image:url('{{ asset('build/images/turtle.jpg') }}')">
                         <p>Franklin</p>
                     </div>
                 </a>

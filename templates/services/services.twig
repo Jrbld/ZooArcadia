@@ -12,7 +12,7 @@
 
 {% block body %}
 
-<header>
+<header style="background-image:url('{{ asset('build/images/services-header.jpg') }}')">
     <p>Nos services</p>
 </header>
 
@@ -20,17 +20,17 @@
     <h2>Le Zoo Arcadia vous propose des services accessibles à tous et toute la journée !</h2>
     <div class="services-cards">
         <a href="{{ path('services.show', {slug: 'visite-guidee'}) }}">
-            <div id="visite-card">
+            <div id="visite-card" style="background-image:url('{{ asset('build/images/visite.jpg') }}')">
                 <p>Visite guidée</p>
             </div>
         </a>
         <a href="{{ path('services.show', {slug: 'visite-petit-train'}) }}">
-            <div id="train-card">
+            <div id="train-card" style="background-image:url('{{ asset('build/images/train.jpg') }}')">
                 <p>Tour de petit train</p>
             </div>
         </a>
         <a href="{{ path('services.show', {slug: 'restauration'}) }}">
-            <div id="food-card">
+            <div id="food-card" style="background-image:url('{{ asset('build/images/food.jpg') }}')">
                 <p>Restauration</p>
             </div>
         </a>
