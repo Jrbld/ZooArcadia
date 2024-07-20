@@ -12,7 +12,7 @@
 
 {% block body %}
 
-<header>
+<header style="background-image:url('{{ asset('build/images/habitats-header.jpg') }}')">
     <p>Nos habitats et animaux</p>
 </header>
 
@@ -20,17 +20,17 @@
     <h2>Venez découvrir les habitats de notre zoo et faites connaissance avec nos différents animaux !</h2>
     <div class="habitats-cards">
         <a href="{{ path('habitats.show', {slug: 'jungle'}) }}">
-            <div id="jungle-card">
+            <div id="jungle-card" style="background-image:url('{{ asset('build/images/jungle.jpg') }}')">
                 <p>La Jungle</p>
             </div>
         </a>
         <a href="{{ path('habitats.show', {slug: 'savane'}) }}">
-            <div id="savane-card">
+            <div id="savane-card" style="background-image:url('{{ asset('build/images/savane-2.jpg') }}')">
                 <p>La Savane</p>
             </div>
         </a>
         <a href="{{ path('habitats.show', {slug: 'marais'}) }}">
-            <div id="marais-card">
+            <div id="marais-card" style="background-image:url('{{ asset('build/images/marais.jpg') }}')">
                 <p>Les Marais</p>
             </div>
         </a>
