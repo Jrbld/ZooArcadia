@@ -1,0 +1,251 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('habitats') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('habitats') }}
+{% endblock %}
+
+{% block title %}
+
+{% if slug2 == 'sophie-la-girafe' %}
+Zoo Arcadia | Sophie
+{% endif %}
+
+{% if slug2 == 'dumbo-l-elephant' %}
+Zoo Arcadia | Dumbo
+{% endif %}
+
+{% if slug2 == 'georges-le-chimpanze' %}
+Zoo Arcadia | Georges
+{% endif %}
+
+{% if slug2 == 'simba-le-lion' %}
+Zoo Arcadia | Simba
+{% endif %}
+
+{% if slug2 == 'potam-l-hippopotame' %}
+Zoo Arcadia | Potam
+{% endif %}
+
+{% if slug2 == 'khumba-le-zebre' %}
+Zoo Arcadia | Khumba
+{% endif %}
+
+{% if slug2 == 'enzo-le-crocodile' %}
+Zoo Arcadia | Enzo
+{% endif %}
+
+{% if slug2 == 'didou-le-flamant-rose' %}
+Zoo Arcadia | Didou
+{% endif %}
+
+{% if slug2 == 'franklin-la-tortue' %}
+Zoo Arcadia | Franklin
+{% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+{% if slug2 == 'sophie-la-girafe' %}
+
+    <div class="sophie-header"></div>
+
+    <section class="animal">
+        <a class="animal-back-button" href="{{ path('habitats.show', {slug: 'jungle'}) }}"><</a>
+        <div class="animal-section">
+            <h2 class="animal-name">Sophie</h2>
+            <p class="animal-description">
+                Sophie est une girafe majestueuse de 5 ans, originaire de Malaisie.<br>
+                Avec son long cou gracieux et ses taches distinctives, elle est l’une des stars du zoo.<br>
+                Sophie est connue pour sa nature curieuse et amicale, souvent vue en train d’explorer son enclos ou de tendre son cou pour attraper les feuilles les plus hautes.<br>
+                Sa présence au zoo est non seulement une source de fascination pour les visiteurs, mais aussi un témoignage des efforts de conservation pour protéger ces magnifiques créatures.
+            </p>
+            <div class="etat-section">
+                <h2>Avis du Dr. Foldingue | 14/07/2024</h2>
+                <p>Sophie se porte très bien, elle accepte (sans gronder) chaque soin que je lui porte et est très câline !</p>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if slug2 == 'dumbo-l-elephant' %}
+
+    <div class="dumbo-header"></div>
+
+    <section class="animal">
+        <a class="animal-back-button" href="{{ path('habitats.show', {slug: 'jungle'}) }}"><</a>
+        <div class="animal-section">
+            <h2 class="animal-name">Dumbo</h2>
+            <p class="animal-description">
+                Dumbo, originaire du Gabon, est un jeune éléphant de 2 ans.<br>
+                Avec ses grandes oreilles et son comportement joueur, il est rapidement devenu l’un des favoris des visiteurs et des employés du zoo.<br>
+                Dumbo adore s’ébattre dans l’eau et jouer avec les autres éléphants de son enclos.<br>
+                Sa présence au zoo aide à sensibiliser le public à la protection des éléphants et à la conservation de leur habitat naturel.
+            </p>
+            <div class="etat-section">
+                <h2>Avis du Dr. Foldingue | 12/07/2024</h2>
+                <p>Extrêmement joueur, Dumbo est en pleine croissance et en bonne santé.</p>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if slug2 == 'georges-le-chimpanze' %}
+
+    <div class="georges-header"></div>
+
+    <section class="animal">
+        <a class="animal-back-button" href="{{ path('habitats.show', {slug: 'jungle'}) }}"><</a>
+        <div class="animal-section">
+            <h2 class="animal-name">Georges</h2>
+            <p class="animal-description">
+                Georges est un chimpanzé Brésilien de 12 ans.<br>
+                Avec son intelligence vive et son comportement espiègle, il captive l’attention de tous les visiteurs du zoo.<br>
+                Il aime passer ses journées à grimper aux arbres et à interagir avec ses compagnons de groupe.<br>
+                Sa présence au zoo joue un rôle crucial dans l’éducation du public sur les primates.
+            </p>
+            <div class="etat-section">
+                <h2>Avis du Dr. Foldingue | 15/07/2024</h2>
+                <p>Georges fête tout juste ses 12 ans et se remet tout doucement d'une petite blessure à la main, c'est un vrai guerrier !</p>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if slug2 == 'simba-le-lion' %}
+
+    <div class="simba-header"></div>
+
+    <section class="animal">
+        <a class="animal-back-button" href="{{ path('habitats.show', {slug: 'savane'}) }}"><</a>
+        <div class="animal-section">
+            <h2 class="animal-name">Simba</h2>
+            <p class="animal-description">
+                Simba est un lion majestueux de 8 ans, originaire du Ghana.<br>
+                Avec sa crinière imposante et son regard perçant, il incarne la puissance et la noblesse de son espèce.<br>
+                Il passe ses journées à patrouiller son enclos et à se reposer à l’ombre des arbres, observant attentivement son environnement.<br>
+                Sa présence au zoo est une véritable attraction pour tous les visiteurs.
+            </p>
+            <div class="etat-section">
+                <h2>Avis du Dr. Foldingue | 09/07/2024</h2>
+                <p>Simba est toujours le roi du zoo ! Après quelques mois compliqués pour lui appliquer des soins, il se laisse enfin faire !</p>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if slug2 == 'potam-l-hippopotame' %}
+
+    <div class="potam-header"></div>
+
+    <section class="animal">
+        <a class="animal-back-button" href="{{ path('habitats.show', {slug: 'savane'}) }}"><</a>
+        <div class="animal-section">
+            <h2 class="animal-name">Potam</h2>
+            <p class="animal-description">
+                Tout droit venu du Bénin, Potam est un hippopotame de 7 ans.<br>
+                Avec sa peau épaisse et grise, il passe la plupart de ses journées à se rafraîchir dans les rivières et les marécages.<br>
+                Il est connu pour son caractère doux et curieux, souvent observé en train de jouer avec les autres animaux de son habitat.<br>
+                Sa présence majestueuse et tranquille fait de lui une figure emblématique de la faune béninoise.
+            </p>
+            <div class="etat-section">
+                <h2>Avis du Dr. Foldingue | 16/07/2024</h2>
+                <p>Potam est un vrai nounours, il adore se rouler dans la boue et cela montre qu'il est en parfaite santé !</p>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if slug2 == 'khumba-le-zebre' %}
+
+    <div class="khumba-header"></div>
+
+    <section class="animal">
+        <a class="animal-back-button" href="{{ path('habitats.show', {slug: 'savane'}) }}"><</a>
+        <div class="animal-section">
+            <h2 class="animal-name">Khumba</h2>
+            <p class="animal-description">
+                Khumba est un zèbre de 4 ans originaire de l’Ouganda.<br>
+                Avec ses rayures noires et blanches distinctives, il se distingue facilement parmi les autres animaux de son enclos.<br>
+                Il est connu pour sa vivacité et son esprit aventureux, souvent vu en train de galoper à travers l'immense espace qui lui est accordé.<br>
+                Sa nature curieuse et sociable en fait un membre apprécié de son groupe.
+            </p>
+            <div class="etat-section">
+                <h2>Avis du Dr. Foldingue | 11/07/2024</h2>
+                <p>Khumba est actuellement un peu faible, il mange très peu mais je sens que le traitement commence à faire effet et qu'il va retrouver du poil de la bête.</p>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if slug2 == 'enzo-le-crocodile' %}
+
+    <div class="enzo-header"></div>
+
+    <section class="animal">
+        <a class="animal-back-button" href="{{ path('habitats.show', {slug: 'marais'}) }}"><</a>
+        <div class="animal-section">
+            <h2 class="animal-name">Enzo</h2>
+            <p class="animal-description">
+                Enzo est un crocodile de 10 ans que nous avons ramené du Parc National des Everglades, en Floride.<br>
+                Avec sa peau écailleuse et ses puissantes mâchoires, il est un prédateur redoutable des marais.<br>
+                Enzo est souvent vu en train de se prélasser au soleil ou de glisser silencieusement dans les eaux troubles.<br>
+                Sa présence imposante et son comportement furtif font de lui un habitant fascinant et respecté de notre zoo.
+            </p>
+            <div class="etat-section">
+                <h2>Avis du Dr. Foldingue | 18/07/2024</h2>
+                <p>10 ans, un vrai morfal et toujours au meilleur de sa forme, Enzo est éternel !</p>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if slug2 == 'didou-le-flamant-rose' %}
+
+    <div class="didou-header"></div>
+
+    <section class="animal">
+        <a class="animal-back-button" href="{{ path('habitats.show', {slug: 'marais'}) }}"><</a>
+        <div class="animal-section">
+            <h2 class="animal-name">Didou</h2>
+            <p class="animal-description">
+                Didou est un flamant rose de 3 ans qui vivait dans les marécages de Louisiane.<br>
+                Avec ses plumes roses éclatantes et ses longues pattes fines, il est une véritable merveille à observer.<br>
+                Didou passe ses journées à se nourrir de petits crustacés et à se reposer sur une patte, comme le font les flamants roses.<br>
+                Sa grâce et son élégance font de lui une figure emblématique de notre parc.
+            </p>
+            <div class="etat-section">
+                <h2>Avis du Dr. Foldingue | 19/07/2024</h2>
+                <p>Qu'il est difficile de courir après Didou pour lui porter les soins ! Mais il est adorable et c'est mon chouchou.</p>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if slug2 == 'franklin-la-tortue' %}
+
+    <div class="franklin-header"></div>
+
+    <section class="animal">
+        <a class="animal-back-button" href="{{ path('habitats.show', {slug: 'marais'}) }}"><</a>
+        <div class="animal-section">
+            <h2 class="animal-name">Franklin</h2>
+            <p class="animal-description">
+                Originaire du Botswana, Franklin est une tortue de 20 ans.<br>
+                Avec sa carapace robuste et ses mouvements lents mais déterminés, il est un symbole de longévité et de sagesse.<br>
+                Il passe ses journées à manger, nager et dormir !<br>
+                Sa nature paisible et son allure tranquille font de lui un habitant respecté et admiré de son enclos.
+            </p>
+            <div class="etat-section">
+                <h2>Avis du Dr. Foldingue | 20/07/2024</h2>
+                <p>Un vrai paresseux ce Franklin ! Son péché mignon ? Les gratouilles dans le cou !</p>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% endblock %}

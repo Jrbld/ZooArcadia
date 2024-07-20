@@ -1,0 +1,920 @@
+@import url('app.css');
+
+/* -------------------------------------------------------- */
+/* PAGE HABITATS */
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------- */
+header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-color: #DADDC8;
+    background-image: url('../../public/build/images/habitats-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header p{
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 220px;
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* SECTION HABITATS */
+/* -------------------------------------------------------- */
+.habitats {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.habitats h2 {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.habitats-cards {
+    width: 1340px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.habitats-cards a {
+    text-decoration: none;
+}
+
+#jungle-card, #savane-card, #marais-card {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#jungle-card {
+    background-image: url('../../public/build/images/jungle.jpg');
+}
+
+#savane-card {
+    background-image: url('../../public/build/images/savane-2.jpg');
+}
+
+#marais-card {
+    background-image: url('../../public/build/images/marais.jpg');
+}
+
+#jungle-card p, #savane-card p, #marais-card p {
+    font-family: 'Config Rounded', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    opacity: 0;
+    display: block;
+}
+
+#jungle-card:hover, #savane-card:hover, #marais-card:hover {
+    box-shadow: 5px 5px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+#jungle-card:hover p, #savane-card:hover p, #marais-card:hover p {
+    opacity: 1;
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN HABITATS */
+/* -------------------------------------------------------- */
+@media screen and (max-width: 1380px) {
+    
+    .habitats-cards {
+        width: 950px;
+        height: auto;
+        justify-content: space-around;
+    }
+    
+    #jungle-card, #savane-card, #marais-card {
+        width: 300px;
+        height: 200px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    #jungle-card p, #savane-card p, #marais-card p {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .habitats {
+        width: 100%;
+        height: auto;
+    }
+    
+    .habitats h2 {
+        font-size: 26px;
+    }
+
+    .habitats-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #jungle-card, #savane-card {
+        margin-bottom: 25px;
+    }
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* PAGE JUNGLE */
+/* -------------------------------------------------------- */
+.jungle-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/jungle-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jungle {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+#jungle-back-button {
+    display: block;
+    position: static;
+    width: 50px;
+    height: 50px;
+    background-color: #1A7A30;
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+#jungle-back-button:hover {
+    background-color: #B6B61B;
+}
+
+.jungle-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jungle-title {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: -45px;
+}
+
+.jungle p {
+    line-height: 2;
+    text-align: center;
+}
+
+.jungle-animals-title {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.jungle-animals-cards {
+    width: 1340px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jungle-animals-cards a {
+    text-decoration: none;
+}
+
+#girafe-card, #elephant-card {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#monkey-card {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#girafe-card {
+    background-image: url('../../public/build/images/girafe.jpg');
+}
+
+#elephant-card {
+    background-image: url('../../public/build/images/elephant.jpg');
+}
+
+#monkey-card {
+    background-image: url('../../public/build/images/monkey.jpg');
+}
+
+#girafe-card p, #elephant-card p, #monkey-card p {
+    font-family: 'Config Rounded', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    opacity: 0;
+    display: block;
+}
+
+#girafe-card:hover, #elephant-card:hover, #monkey-card:hover {
+    box-shadow: 5px 5px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+#girafe-card:hover p, #elephant-card:hover p, #monkey-card:hover p {
+    opacity: 1;
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN JUNGLE */
+/* -------------------------------------------------------- */
+@media screen and (max-width: 1380px) {
+    .jungle-animals-cards {
+        width: 950px;
+        height: auto;
+        justify-content: space-around;
+    }
+    
+    #girafe-card, #elephant-card, #monkey-card {
+        width: 300px;
+        height: 200px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    #girafe-card p, #elephant-card p, #monkey-card p {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .jungle {
+        width: 100%;
+        height: auto;
+    }
+
+    .jungle-animals-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #girafe-card, #elephant-card {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .jungle-title {
+        margin-top: 50px;
+    }
+    #jungle-back-button {
+        margin: auto;
+    }
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* PAGE SAVANE */
+/* -------------------------------------------------------- */
+.savane-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/savane.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.savane {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+#savane-back-button {
+    display: block;
+    position: static;
+    width: 50px;
+    height: 50px;
+    background-color: #1A7A30;
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+#savane-back-button:hover {
+    background-color: #B6B61B;
+}
+
+.savane-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.savane-title {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: -45px;
+}
+
+.savane p {
+    line-height: 2;
+    text-align: center;
+}
+
+.savane-animals-title {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.savane-animals-cards {
+    width: 1340px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.savane-animals-cards a {
+    text-decoration: none;
+}
+
+#lion-card, #hipo-card, #zebre-card {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#lion-card {
+    background-image: url('../../public/build/images/lion.jpg');
+}
+
+#hipo-card {
+    background-image: url('../../public/build/images/hipo.jpg');
+}
+
+#zebre-card {
+    background-image: url('../../public/build/images/zebra.jpg');
+}
+
+#lion-card p, #hipo-card p, #zebre-card p {
+    font-family: 'Config Rounded', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    opacity: 0;
+    display: block;
+}
+
+#lion-card:hover, #hipo-card:hover, #zebre-card:hover {
+    box-shadow: 5px 5px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+#lion-card:hover p, #hipo-card:hover p, #zebre-card:hover p {
+    opacity: 1;
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN SAVANE */
+/* -------------------------------------------------------- */
+@media screen and (max-width: 1380px) {
+    .savane-animals-cards {
+        width: 950px;
+        height: auto;
+        justify-content: space-around;
+    }
+    
+    #lion-card, #hipo-card, #zebre-card {
+        width: 300px;
+        height: 200px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    #lion-card p, #hipo-card p, #zebre-card p {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .savane {
+        width: 100%;
+        height: auto;
+    }
+
+    .savane-animals-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #lion-card, #hipo-card {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .savane-title {
+        margin-top: 50px;
+    }
+    #savane-back-button {
+        margin: auto;
+    }
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* PAGE MARAIS */
+/* -------------------------------------------------------- */
+.marais-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/marais-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.marais {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+#marais-back-button {
+    display: block;
+    position: static;
+    width: 50px;
+    height: 50px;
+    background-color: #1A7A30;
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+#marais-back-button:hover {
+    background-color: #B6B61B;
+}
+
+.marais-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.marais-title {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: -45px;
+}
+
+.marais p {
+    line-height: 2;
+    text-align: center;
+}
+
+.marais-animals-title {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.marais-animals-cards {
+    width: 1340px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.marais-animals-cards a {
+    text-decoration: none;
+}
+
+#croco-card, #flamingo-card, #turtle-card {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#croco-card {
+    background-image: url('../../public/build/images/crocodile.jpg');
+}
+
+#flamingo-card {
+    background-image: url('../../public/build/images/flamingo.jpg');
+}
+
+#turtle-card {
+    background-image: url('../../public/build/images/turtle.jpg');
+}
+
+#croco-card p, #flamingo-card p, #turtle-card p {
+    font-family: 'Config Rounded', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    opacity: 0;
+    display: block;
+}
+
+#croco-card:hover, #flamingo-card:hover, #turtle-card:hover {
+    box-shadow: 5px 5px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+#croco-card:hover p, #flamingo-card:hover p, #turtle-card:hover p {
+    opacity: 1;
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN MARAIS */
+/* -------------------------------------------------------- */
+@media screen and (max-width: 1380px) {
+    .marais-animals-cards {
+        width: 950px;
+        height: auto;
+        justify-content: space-around;
+    }
+    
+    #croco-card, #flamingo-card, #turtle-card {
+        width: 300px;
+        height: 200px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    #croco-card p, #flamingo-card p, #turtle-card p {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .marais {
+        width: 100%;
+        height: auto;
+    }
+
+    .marais-animals-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #croco-card, #flamingo-card {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .marais-title {
+        margin-top: 50px;
+    }
+    #marais-back-button {
+        margin: auto;
+    }
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* PAGES ANIMAUX */
+/* -------------------------------------------------------- */
+.sophie-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/girafe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dumbo-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/elephant.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.georges-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/monkey.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+
+.simba-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/lion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.potam-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/hipo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.khumba-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/zebra.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.enzo-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/crocodile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.didou-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/flamingo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.franklin-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('../../public/build/images/turtle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.animal {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.animal-back-button {
+    display: block;
+    position: static;
+    width: 50px;
+    height: 50px;
+    background-color: #1A7A30;
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+.animal-back-button:hover {
+    background-color: #B6B61B;
+}
+
+.animal-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.animal-name {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: -45px;
+}
+
+.animal-description {
+    line-height: 2;
+    text-align: center;
+}
+
+.etat-section {
+    width: 1340px;
+    height: auto;
+    background-color: #B6B61B;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 5px 5px 2px -2px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN PAGES ANIMAUX */
+/* -------------------------------------------------------- */
+@media screen and (max-width: 1380px) {
+    .etat-section {
+        width: 900px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .etat-section {
+        width: 700px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .etat-section h2 {
+        padding-bottom: 20px;
+    }
+    .etat-section p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .animal-name {
+        margin-top: 50px;
+    }
+    .animal-back-button {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .etat-section {
+        width: 450px;
+        height: auto;
+    }
+}
+/* -------------------------------------------------------- */

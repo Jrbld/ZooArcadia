@@ -1,0 +1,140 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('habitats') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('habitats') }}
+{% endblock %}
+
+{% block title %}
+
+{% if slug == 'jungle' %}
+Zoo Arcadia | La Jungle
+{% endif %}
+
+{% if slug == 'savane' %}
+Zoo Arcadia | La Savane
+{% endif %}
+
+{% if slug == 'marais' %}
+Zoo Arcadia | Les Marais
+{% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+{% if slug == 'jungle' %}
+    <div class="jungle-header"></div>
+
+    <section class="jungle">
+        <a id="jungle-back-button" href="{{ url('habitats') }}"><</a>
+        <div class="jungle-section">
+            <h2 class="jungle-title">Le Livre de la Jungle s'ouvre à vous...</h2>
+            <p>
+                Bienvenue dans une reconstitution immersive et captivante de l’écosystème tropical.<br>
+                En entrant dans cette zone, vous serez immédiatement enveloppés par une végétation luxuriante, composée de plantes exotiques, de lianes et d’arbres imposants.<br>
+                Les sons de la jungle, tels que le chant des oiseaux tropicaux et le murmure des ruisseaux, ajoutent à l’authenticité de l’expérience.<br>
+                Les animaux emblématiques de la jungle, comme les girafes, les éléphants, et les singes, évoluent dans des enclos spacieux qui reproduisent fidèlement leur habitat naturel.<br>
+                Des panneaux informatifs et des bornes interactives vous permettront d’en apprendre davantage sur la biodiversité de la jungle, sur les efforts de conservation en cours, et vous pourrez apprendre à connaître chacun de ses animaux.<br>
+                Cet habitat offre une occasion unique de découvrir la richesse et la complexité de la jungle tout en sensibilisant à la protection de ces environnements précieux.
+            </p>
+            <h2 class="jungle-animals-title">Nos 3 plus anciens compagnons de cet habitat</h2>
+            <div class="jungle-animals-cards">
+                <a href="{{ path('habitats.show.animals', {slug: 'jungle', slug2: 'sophie-la-girafe'}) }}">
+                    <div id="girafe-card">
+                        <p>Sophie</p>
+                    </div>
+                </a>
+                <a href="{{ path('habitats.show.animals', {slug: 'jungle', slug2: 'dumbo-l-elephant'}) }}">
+                    <div id="elephant-card">
+                        <p>Dumbo</p>
+                    </div>
+                </a>
+                <a href="{{ path('habitats.show.animals', {slug: 'jungle', slug2: 'georges-le-chimpanze'}) }}">
+                    <div id="monkey-card">
+                        <p>Georges</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if slug == 'savane' %}
+    <div class="savane-header"></div>
+
+    <section class="savane">
+        <a id="savane-back-button" href="{{ url('habitats') }}"><</a>
+        <div class="savane-section">
+            <h2 class="savane-title">Bienvenue au coeur de la Savane...</h2>
+            <p>
+                Rentrez dans cette vaste étendue qui recrée fidèlement les paysages ouverts et herbeux de l’Afrique.<br>
+                En parcourant cette zone, vous pourrez observer une variété d’animaux emblématiques de la savane, tels que les lions majestueux, les hippopotames et les zèbres rayés.<br>
+                Les enclos sont conçus pour offrir aux animaux suffisamment d’espace pour se déplacer librement, imitant ainsi leur environnement naturel.<br>
+                Des points d’observation stratégiques vous permettront  de voir les animaux de près sans perturber leur tranquillité.<br>
+                Des panneaux éducatifs fournissent des informations sur les comportements, les régimes alimentaires et les efforts de conservation pour protéger ces espèces.<br>
+                L’habitat de la savane est non seulement un lieu d’émerveillement, mais aussi une opportunité d’apprendre et de sensibiliser le public à la préservation de ces magnifiques créatures et de leurs habitats naturels.
+            </p>
+            <h2 class="savane-animals-title">Cet habitat nous offre de très beaux spécimens</h2>
+            <div class="savane-animals-cards">
+                <a href="{{ path('habitats.show.animals', {slug: 'savane', slug2: 'simba-le-lion'}) }}">
+                    <div id="lion-card">
+                        <p>Simba</p>
+                    </div>
+                </a>
+                <a href="{{ path('habitats.show.animals', {slug: 'savane', slug2: 'potam-l-hippopotame'}) }}">
+                    <div id="hipo-card">
+                        <p>Potam</p>
+                    </div>
+                </a>
+                <a href="{{ path('habitats.show.animals', {slug: 'savane', slug2: 'khumba-le-zebre'}) }}">
+                    <div id="zebre-card">
+                        <p>Khumba</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if slug == 'marais' %}
+    <div class="marais-header"></div>
+
+    <section class="marais">
+        <a id="marais-back-button" href="{{ url('habitats') }}"><</a>
+        <div class="marais-section">
+            <h2 class="marais-title">Venez vous rafraîchir au bord des Marais...</h2>
+            <p>
+                Vous voilà dans un véritable havre de biodiversité.<br>
+                Ce milieu humide est recréé avec soin pour offrir un environnement naturel aux espèces qui y vivent.<br>
+                Les marais sont parsemés de végétation dense, comme des roseaux et des nénuphars, qui fournissent abri et nourriture aux animaux.<br>
+                Des passerelles en bois vous permettront de vous promener au-dessus de l’eau, offrant une vue imprenable sur les crocodiles, les flamants roses et les tortues.<br>
+                Tout au long de ce parcours, vous apprendrez l’importance des marais pour la filtration de l’eau et la protection contre les inondations.<br>
+                Cet habitat est non seulement un lieu de découverte, mais aussi un sanctuaire pour les espèces menacées, contribuant à leur conservation et à la sensibilisation du public.
+            </p>
+            <h2 class="marais-animals-title">Cet habitat vous réserve son lot de surprises</h2>
+            <div class="marais-animals-cards">
+                <a href="{{ path('habitats.show.animals', {slug: 'marais', slug2: 'enzo-le-crocodile'}) }}">
+                    <div id="croco-card">
+                        <p>Enzo</p>
+                    </div>
+                </a>
+                <a href="{{ path('habitats.show.animals', {slug: 'marais', slug2: 'didou-le-flamant-rose'}) }}">
+                    <div id="flamingo-card">
+                        <p>Didou</p>
+                    </div>
+                </a>
+                <a href="{{ path('habitats.show.animals', {slug: 'marais', slug2: 'franklin-la-tortue'}) }}">
+                    <div id="turtle-card">
+                        <p>Franklin</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% endblock %}

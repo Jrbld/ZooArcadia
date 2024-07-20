@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('contact') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('contact') }}
+{% endblock %}
+
+{% block title %}Zoo Arcadia | Contact{% endblock %}
+
+{% block body %}
+
+<header>
+    <p>Contactez-nous</p>
+</header>
+
+<section class="contact">
+    <h2>Si vous avez une question ou une remarque à nous faire parvenir, c'est par ici !</h2>
+
+    <div class="contact-space">
+
+        {{ form_start(form) }}
+        <div class="contact-box">
+            <div id="name-contact">{{ form_row(form.name, {'attr': {'size': '30'}}) }}</div>
+            <div id="email-contact">{{ form_row(form.email, {'attr': {'size': '30'}}) }}</div>
+            <div id="message-contact">{{ form_row(form.message, {'attr': {'size': '10'}}) }}</div>
+            <div id="submit-contact">{{ form_row(form.submit) }}
+                {% for message in app.flashes('success') %}
+                <div class="alert alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            </div>
+        {{ form_end(form) }}
+        </div>
+
+        <div class="contact-infos">
+            <h2 id="title-1">Adresse</h2>
+            <p id="text-1">
+                18, Route de la  Forêt de Brocéliande<br>
+                56430 CONCORET
+            </p>
+            <h2 id="title-2">Contact</h2>
+            <p id="text-2">
+                contact@arcadia.fr<br>
+                02 99 07 07 07
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

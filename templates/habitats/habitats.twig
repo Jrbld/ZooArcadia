@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('habitats') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('habitats') }}
+{% endblock %}
+
+{% block title %}Zoo Arcadia | Nos habitats et animaux{% endblock %}
+
+{% block body %}
+
+<header>
+    <p>Nos habitats et animaux</p>
+</header>
+
+<section class="habitats">
+    <h2>Venez découvrir les habitats de notre zoo et faites connaissance avec nos différents animaux !</h2>
+    <div class="habitats-cards">
+        <a href="{{ path('habitats.show', {slug: 'jungle'}) }}">
+            <div id="jungle-card">
+                <p>La Jungle</p>
+            </div>
+        </a>
+        <a href="{{ path('habitats.show', {slug: 'savane'}) }}">
+            <div id="savane-card">
+                <p>La Savane</p>
+            </div>
+        </a>
+        <a href="{{ path('habitats.show', {slug: 'marais'}) }}">
+            <div id="marais-card">
+                <p>Les Marais</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+{% endblock %}
