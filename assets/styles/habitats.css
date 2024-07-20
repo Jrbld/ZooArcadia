@@ -15,7 +15,7 @@ header {
     height: 500px;
     margin-top: 100px;
     background-color: #DADDC8;
-    background-image: url('../../public/build/images/habitats-header.jpg');
+    /* background-image: url('../../public/build/images/habitats-header.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -79,15 +79,15 @@ header p{
 }
 
 #jungle-card {
-    background-image: url('../../public/build/images/jungle.jpg');
+    /* background-image: url('../../public/build/images/jungle.jpg'); */
 }
 
 #savane-card {
-    background-image: url('../../public/build/images/savane-2.jpg');
+    /* background-image: url('../../public/build/images/savane-2.jpg'); */
 }
 
 #marais-card {
-    background-image: url('../../public/build/images/marais.jpg');
+    /* background-image: url('../../public/build/images/marais.jpg'); */
 }
 
 #jungle-card p, #savane-card p, #marais-card p {
@@ -168,7 +168,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/jungle-2.jpg');
+    /* background-image: url('../../public/build/images/jungle-2.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -267,15 +267,15 @@ header p{
 }
 
 #girafe-card {
-    background-image: url('../../public/build/images/girafe.jpg');
+    /* background-image: url('../../public/build/images/girafe.jpg'); */
 }
 
 #elephant-card {
-    background-image: url('../../public/build/images/elephant.jpg');
+    /* background-image: url('../../public/build/images/elephant.jpg'); */
 }
 
 #monkey-card {
-    background-image: url('../../public/build/images/monkey.jpg');
+    /* background-image: url('../../public/build/images/monkey.jpg'); */
 }
 
 #girafe-card p, #elephant-card p, #monkey-card p {
@@ -360,7 +360,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/savane.jpg');
+    /* background-image: url('../../public/build/images/savane.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -448,15 +448,15 @@ header p{
 }
 
 #lion-card {
-    background-image: url('../../public/build/images/lion.jpg');
+    /* background-image: url('../../public/build/images/lion.jpg'); */
 }
 
 #hipo-card {
-    background-image: url('../../public/build/images/hipo.jpg');
+    /* background-image: url('../../public/build/images/hipo.jpg'); */
 }
 
 #zebre-card {
-    background-image: url('../../public/build/images/zebra.jpg');
+    /* background-image: url('../../public/build/images/zebra.jpg'); */
 }
 
 #lion-card p, #hipo-card p, #zebre-card p {
@@ -541,7 +541,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/marais-2.jpg');
+    /* background-image: url('../../public/build/images/marais-2.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -629,15 +629,15 @@ header p{
 }
 
 #croco-card {
-    background-image: url('../../public/build/images/crocodile.jpg');
+    /* background-image: url('../../public/build/images/crocodile.jpg'); */
 }
 
 #flamingo-card {
-    background-image: url('../../public/build/images/flamingo.jpg');
+    /* background-image: url('../../public/build/images/flamingo.jpg'); */
 }
 
 #turtle-card {
-    background-image: url('../../public/build/images/turtle.jpg');
+    /* background-image: url('../../public/build/images/turtle.jpg'); */
 }
 
 #croco-card p, #flamingo-card p, #turtle-card p {
@@ -722,7 +722,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/girafe.jpg');
+    /* background-image: url('../../public/build/images/girafe.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -732,7 +732,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/elephant.jpg');
+    /* background-image: url('../../public/build/images/elephant.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -742,7 +742,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/monkey.jpg');
+    /* background-image: url('../../public/build/images/monkey.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 25%;
@@ -752,7 +752,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/lion.jpg');
+    /* background-image: url('../../public/build/images/lion.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -762,7 +762,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/hipo.jpg');
+    /* background-image: url('../../public/build/images/hipo.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -772,7 +772,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/zebra.jpg');
+    /* background-image: url('../../public/build/images/zebra.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -782,7 +782,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/crocodile.jpg');
+    /* background-image: url('../../public/build/images/crocodile.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -792,7 +792,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/flamingo.jpg');
+    /* background-image: url('../../public/build/images/flamingo.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -802,7 +802,7 @@ header p{
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url('../../public/build/images/turtle.jpg');
+    /* background-image: url('../../public/build/images/turtle.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
