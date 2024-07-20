@@ -1,0 +1,191 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('home') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('home') }}
+{% endblock %}
+
+{% block title %}Zoo Arcadia | Accueil{% endblock %}
+
+{% block body %}
+
+<header>
+    <p>Bienvenue au Zoo Arcadia !</p>
+</header>
+
+
+<section class="resume">
+    <div class="resume-image">
+        <img src="{{ asset('build/images/resume.jpg') }}" alt="Photo 1 de présentation du zoo">
+    </div>
+    <div class="resume-text">
+        <h2>Présentation du zoo</h2>
+        <p>
+            Créé en 1960, Arcadia est un zoo situé en France, près de la forêt de Brocéliande, en Bretagne.
+            <br><br>
+            Il possède tout un pannel d'animaux, réparti dans différents habitats.
+            <br><br>
+            Chaque jour, avant l'ouverture du zoo, plusieurs vétérinaires viennent effectuer des contrôles sur chaque animal, afin de s'assurer
+            que tout va bien et qu'ils sont tous en bonne santé.
+            <br><br>
+            Différents services vous sont proposés dans ce zoo, pour que vous puissiez passer une merveilleuse journée aux côtés de nos amis les bêtes.
+            <br><br>
+            Bonne visite et n'hésitez pas à nous laisser un petit avis !
+        </p>
+    </div>
+</section>
+
+<section class="infos">
+    <div class="infos-zoo">
+        <h2>Nous vous accueillons<br>toute l'année !</h2>
+        <div class="infos-logos">
+            <figure>
+                <img src="{{ asset('build/images/calendar.png') }}" alt="Logo Calendrier">
+                <figcaption>Ouvert 7j/7</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ asset('build/images/time.png') }}" alt="Logo Horloge">
+                <figcaption>9h - 18h</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ asset('build/images/parking.png') }}" alt="Logo Parking">
+                <figcaption>Parking gratuit</figcaption>
+            </figure>
+        </div>
+        <a id="reservation-button" href="#">
+            <button><img src="{{ asset('build/images/ticket.png') }}" alt="Logo Tickets">Réservez vos billets</button>
+        </a>
+    </div>
+    <span class="verticale-line"></span>
+    <div class="services-zoo">
+        <h2>Les services disponibles<br>au sein du zoo</h2>
+        <div class="services-logos">
+            <figure>
+                <img src="{{ asset('build/images/guide.png') }}" alt="Logo Guide">
+                <figcaption>Visite guidée</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ asset('build/images/train.png') }}" alt="Logo Train">
+                <figcaption>Petit train</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ asset('build/images/burger.png') }}" alt="Logo Burger">
+                <figcaption>Restauration</figcaption>
+            </figure>
+        </div>
+        <a id="services-button" href="{{ url('services') }}">
+            <button>En savoir plus</button>
+        </a>
+    </div>
+</section>
+
+<section class="habitats-resume">
+    <h2>Nos habitats et animaux</h2>
+    <div class="habitats-cards">
+        <a class="jungle-link" href="{{ url('habitats.show', { slug:'jungle'}) }}">
+            <div class="jungle-card">
+                <h3 id="jungle-title">Jungle</h3>
+                <span id="horizontale-jungle-line"></span>
+                <img src="{{ asset('build/images/lion.jpg') }}" alt="Photo de lion">
+            </div>
+        </a>
+        <a class="savane-link" href="{{ url('habitats.show', { slug:'savane'}) }}">
+            <div class="savane-card">
+                <h3 id="savane-title">Savane</h3>
+                <span id="horizontale-savane-line"></span>
+                <img src="{{ asset('build/images/hipo.jpg') }}" alt="Photo d'hippopotame">
+            </div>
+        </a>
+        <a class="marais-link" href="{{ url('habitats.show', { slug:'marais'}) }}">
+            <div class="marais-card">
+                <h3 id="marais-title">Marais</h3>
+                <span id="horizontale-marais-line"></span>
+                <img src="{{ asset('build/images/turtle.jpg') }}" alt="Photo de tortue">
+            </div>
+        </a>
+    </div>
+    <a id="habitats-button" href="{{ url('habitats') }}">
+        <button>Tout découvrir</button>
+    </a>
+</section>
+
+<section class="notice">
+    <h2>Ce que nos visiteurs pensent de nous...</h2>
+    <div class="notice-cards">
+        <div class="notice-1">
+            <div class="header-perso-1">
+                <img id="photo-perso-1" src="{{ asset('build/images/perso-1.png') }}" alt="Photo perso 1">
+                <div class="name-perso-1">
+                    <h3>Noémie P.</h3>
+                    <div class="stars-perso-1">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                    </div>
+                </div>
+            </div>
+            <div class="notice-perso-1">
+                <p>
+                    C’était une très belle découverte, le parc est très grand et on y passe un très bon séjour !<br>
+                    Les habitats sont à couper le souffle !<br>
+                    À faire absolument en famille.<br>
+                    Merci pour tout !
+                </p>
+            </div>
+        </div>
+        <div class="notice-2">
+            <div class="header-perso-2">
+                <img id="photo-perso-2" src="{{ asset('build/images/perso-2.png') }}" alt="Photo perso 2">
+                <div class="name-perso-2">
+                    <h3>Mathias B.</h3>
+                    <div class="stars-perso-2">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                    </div>
+                </div>
+            </div>
+            <div class="notice-perso-2">
+                <p>
+                    Le parc est magnifique ! Tout le personnel est souriant et à l'écoute.<br>
+                    Les animaux sont heureux et bien traités.<br>
+                    Nous le conseillerons avec plaisir à notre entourage !
+                </p>
+            </div>
+        </div>
+        <div class="notice-3">
+            <div class="header-perso-3">
+                <img id="photo-perso-3" src="{{ asset('build/images/perso-3.png') }}" alt="Photo perso 3">
+                <div class="name-perso-1">
+                    <h3>Sophie L.</h3>
+                    <div class="stars-perso-3">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                        <img src="{{ asset('build/images/star.png') }}" alt="Étoile">
+                    </div>
+                </div>
+            </div>
+            <div class="notice-perso-3">
+                <p>
+                    De retour pour la 5ème fois ! Toujours aussi beau et les nouveautés sont géniales !<br>
+                    Être pratiquement seuls à regarder les pandas, un vrai moment exceptionnel.<br>
+                    Parc très propre, ombragé.
+                </p>
+            </div>
+        </div>
+    </div>
+    <a id="notices-button" href="#">
+        <button>Laissez votre avis</button>
+    </a>
+</section>
+
+{% endblock %}

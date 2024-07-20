@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('services') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('services') }}
+{% endblock %}
+
+{% block title %}
+
+{% if slug == 'visite-guidee' %}
+Zoo Arcadia | Visite guidée
+{% endif %}
+
+{% if slug == 'visite-petit-train' %}
+Zoo Arcadia | Tour de petit train
+{% endif %}
+
+{% if slug == 'restauration' %}
+Zoo Arcadia | Restauration
+{% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+{% if slug == 'visite-guidee' %}
+    <div class="visite-header"></div>
+
+    <section class="visite">
+        <a id="visite-back-button" href="{{ url('services') }}"><</a>
+        <h2>Visite guidée</h2>
+        <p>
+            Grâce à nos visites guidées, gratuites et dispensées par nos guides passionnés,<br> vous vivrez une expérience enrichissante et éducative qui vous permettra de découvrir la diversité du monde animal<br>
+            Vous pourrez en apprendre davantage sur les habitudes, les habitats et les comportements des animaux.<br>
+            Les guides partagent des anecdotes fascinantes et des faits intéressants, rendant la visite à la fois divertissante et instructive.<br>
+            De plus, cette expérience offre souvent l’occasion d’observer les animaux de plus près et de poser des questions spécifiques, 
+            ce qui enrichit la compréhension et l’appréciation de la faune.<br>
+            Adultes comme enfants, vous passerez une journée tout en vous connectant avec la nature et en soutenant les efforts de conservation.
+        </p>
+        <a id="visite-place-button" href="#">
+            <button>Réservez votre créneau</button>
+        </a>
+    </section>
+{% endif %}
+
+{% if slug == 'visite-petit-train' %}
+    <div class="train-header"></div>
+
+    <section class="train">
+        <a id="train-back-button" href="{{ url('services') }}"><</a>
+        <h2>Tour de petit train</h2>
+        <p>
+            À bord de notre petit train, venez vivre une aventure unique et plaisante qui ravira petits et grands.<br>
+            Confortablement installé(e), vous pourrez admirer les différents enclos et habitats.<br>
+            Le petit train serpente à travers le zoo, offrant des vues panoramiques et des arrêts stratégiques pour observer de plus près certains animaux emblématiques.<br>
+            Votre guide, équipé d’un micro, vous partagera des informations captivantes et des anecdotes amusantes tout au long du parcours, 
+            rendant l’expérience à la fois éducative et divertissante.<br>
+            Cette manière de découvrir le zoo vous permettra également de couvrir plus de terrain en moins de temps, idéal pour ceux qui souhaitent voir un maximum d’animaux.<br>
+            Ce tour en petit train sera pour vous une façon ludique et relaxante de profiter pleinement de tout ce que notre zoo a à vous offrir.
+        </p>
+        <a id="train-place-button" href="#">
+            <button>Prenez vos places</button>
+        </a>
+    </section>
+{% endif %}
+
+{% if slug == 'restauration' %}
+    <div class="food-header"></div>
+
+    <section class="food">
+        <a id="food-back-button" href="{{ url('services') }}"><</a>
+        <h2>Restauration</h2>
+        <p>
+            Nos points de restauration sont conçues pour satisfaire tous les goûts et vous offrir une pause agréable.<br>
+            Vous trouverez une variété de stands vous proposant des snacks rapides comme des hot-dogs, des pizzas, des glaces,<br> mais également des restaurant aux repas plus complets, tels que des salades, des sandwiches et des plats chauds.<br>
+            Nous mettons également en avant des produits locaux (fromages, charcuteries...), et nous proponsons aussi des options végétariennes<br> et véganes pour répondre aux différentes préférences alimentaires.<br>
+            Vous aurez à vitre disposition des aires de pique-nique, vous permettant de profiter de votre repas dans un cadre naturel et convivial.<br>
+            Grâce à cette pause (bien méritée), votre visite sera encore plus plaisante et confortable, tout en vous permettant de recharger les batteries avant de continuer votre exploration.
+        </p>
+    </section>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,738 @@
+@import url('app.css');
+
+/* -------------------------------------------------------- */
+/* PAGE D'ACCUEIL */
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------- */
+header {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-color: #DADDC8;
+    background-image: url('../../public/build/images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header p{
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 220px;
+}
+/* -------------------------------------------------------- */
+
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN FOOTER */
+/* -------------------------------------------------------- */
+@media screen and (max-width: 968px) {
+    header p {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    header p {
+        font-size: 30px;
+    }
+}
+/* -------------------------------------------------------- */
+
+
+/* -------------------------------------------------------- */
+/* SECTION PRÉSENTATION */
+/* -------------------------------------------------------- */
+.resume {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resume-image img {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.resume-text {
+    width: 400px;
+    height: 400px;
+    padding-left: 25px;
+}
+
+.resume-text h2 {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+}
+
+.resume-text p {
+    padding-top: 25px;
+}
+/* -------------------------------------------------------- */
+
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN PRÉSENTATION */
+/* -------------------------------------------------------- */
+
+@media screen and (max-width: 1296px) {
+    .resume {
+        width: 100%;
+        height: auto;
+    }
+
+    .resume-image img {
+        width: 600px;
+        height: 300px;
+    }
+
+    .resume-text {
+        width: 600px;
+        height: 300px;
+        padding-left: 25px;
+    }
+
+    .resume-text h2 {
+        font-size: 36px;
+    }
+
+    .resume-text p {
+        font-size: 12px;
+        padding-top: 12.5px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .resume {
+        width: 100%;
+        height: auto;
+    }
+
+    .resume-image img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .resume-text {
+        width: 400px;
+        height: 200px;
+    }
+
+    .resume-text h2 {
+        font-size: 26px;
+    }
+
+    .resume-text p {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .resume {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .resume-image img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .resume-text {
+        width: 400px;
+        height: auto;
+        padding: 25px 0 0 0;
+    }
+
+    .resume-text h2 {
+        font-size: 26px;
+    }
+
+    .resume-text p {
+        font-size: 10px;
+    }
+}
+/* -------------------------------------------------------- */
+
+
+/* -------------------------------------------------------- */
+/* SECTION INFOS */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* INFOS */
+/* -------------------------------------------------------- */
+.infos {
+    width: 100%;
+    height: 500px;
+    background-color: #1A7A30;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infos h2 {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #B6B61B;
+}
+
+.infos-logos img, .services-logos img {
+    width: 115px;
+    height: auto;       
+}
+
+.infos-zoo {
+    width: 620px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infos-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infos-logos figure {
+    padding: 40px;
+}
+
+.infos-logos figcaption {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    white-space: nowrap;
+}
+
+#reservation-button {
+    text-decoration: none;
+}
+
+#reservation-button button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #B6B61B;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#reservation-button img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#reservation-button button:hover {
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+.verticale-line {
+    border: 2px solid white;
+    display: inline-block;
+    height: 400px;
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* SERVICES */
+/* -------------------------------------------------------- */
+.services-zoo {
+    width: 620px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-logos figure {
+    padding: 40px;
+}
+
+.services-logos figcaption {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    white-space: nowrap;
+}
+
+#services-button {
+    text-decoration: none;
+}
+
+#services-button button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #B6B61B;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#services-button button:hover {
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN INFOS */
+/* -------------------------------------------------------- */
+@media screen and (max-width: 1296px) {
+    .infos-zoo, .services-zoo {
+        width: 310px;
+        height: auto;
+    }
+    .infos-zoo h2, .services-zoo h2 {
+        font-size: 26px;
+        white-space: nowrap;
+    }
+    .infos-zoo img, .services-zoo img {
+        width: 75px;
+        height: auto;
+    }
+    #reservation-button button, #services-button button {
+        font-size: 12px;
+    }
+    #reservation-button img {
+        width: 18px;
+        height: auto;
+    }
+    .verticale-line {
+        height: 310px;
+        border: 1px solid white;
+    }
+    .services-logos figcaption, .infos-logos figcaption {
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .services-logos figure:last-child, .infos-logos figure:last-child {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .verticale-line {
+        width: 400px;
+        height: 0;
+        margin: 50px 0;
+    }
+
+    .services-logos figcaption, .infos-logos figcaption {
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+/* -------------------------------------------------------- */
+
+
+/* -------------------------------------------------------- */
+/* SECTION RÉSUMÉ HABITATS */
+/* -------------------------------------------------------- */
+.habitats-resume {
+    width: 100%;
+    height: auto;
+    background-color: #DADDC8;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.habitats-resume h2 {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.habitats-cards {
+    width: 1340px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jungle-link, .savane-link, .marais-link {
+    text-decoration: none;
+}
+
+.jungle-card, .savane-card, .marais-card {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jungle-card:hover, .savane-card:hover, .marais-card:hover {
+    box-shadow: 5px 5px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+#jungle-title, #savane-title, #marais-title {
+    text-decoration: none;
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 32px;
+    color: black;
+}
+
+#horizontale-jungle-line, #horizontale-savane-line, #horizontale-marais-line {
+    border: 2px solid #DADDC8;
+    display: inline-block;
+    width: 362px;
+}
+
+.jungle-card img, .savane-card img, .marais-card img {
+    width: 362px;
+    height: 162px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#habitats-button {
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+#habitats-button button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #B6B61B;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#habitats-button button:hover {
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    color: #1A7A30;
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN HABITATS */
+/* -------------------------------------------------------- */
+@media screen and (max-width: 1380px) {
+    .habitats-cards {
+        width: 950px;
+        height: auto;
+        justify-content: space-around;
+    }
+    
+    .jungle-card, .savane-card, .marais-card {
+        width: 300px;
+        height: 200px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    #jungle-title, #savane-title, #marais-title {
+        font-size: 26px;
+    }
+
+    .jungle-card img, .savane-card img, .marais-card img {
+        width: 262px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    #horizontale-jungle-line, #horizontale-savane-line, #horizontale-marais-line {
+        border: 1px solid #DADDC8;
+        display: inline-block;
+        width: 262px;
+    }
+
+    #habitats-button button {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .habitats-resume h2 {
+        padding-bottom: 0;
+    }
+    
+    .habitats-resume {
+        width: 100%;
+        height: auto;
+    }
+    
+    .habitats-resume h2 {
+        font-size: 26px;
+        padding-bottom: 50px;
+    }
+
+    .habitats-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .jungle-card, .savane-card {
+        margin-bottom: 25px;
+    }
+}
+/* -------------------------------------------------------- */
+
+
+/* -------------------------------------------------------- */
+/* SECTION AVIS */
+/* -------------------------------------------------------- */
+.notice {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.notice h2 {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.notice-cards {
+    width: 1340px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.notice-1, .notice-2, .notice-3 {
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1A7A30;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.header-perso-1, .header-perso-2, .header-perso-3 {
+    width: 280px;
+    height: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -40px;
+}
+
+#photo-perso-1, #photo-perso-2, #photo-perso-3 {
+    width: 120px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.name-perso-1 h3, .name-perso-2 h3, .name-perso-3 h3 {
+    font-family: 'Config Rounded', sans-serif;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+.stars-perso-1, .stars-perso-2, .stars-perso-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars-perso-1 img, .stars-perso-2 img, .stars-perso-3 img {
+    width: 30px;
+    height: auto;
+    padding-right: 5px;
+}
+
+.notice-perso-1 p, .notice-perso-2 p, .notice-perso-3 p {
+    color: white;
+}
+
+#notices-button {
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+#notices-button button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1A7A30;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#notices-button button:hover {
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    background-color: #B6B61B;
+    color: white;
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN HABITATS */
+/* -------------------------------------------------------- */
+@media screen and (max-width: 1380px) {
+    .notice-cards {
+        width: 950px;
+        height: auto;
+        justify-content: space-around;
+    }
+    
+    .notice-1, .notice-2, .notice-3 {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .header-perso-1, .header-perso-2, .header-perso-3 {
+        width: 280px;
+        height: 75px;
+        margin-left: 0;
+    }
+
+    .name-perso-1 h3, .name-perso-2 h3, .name-perso-3 h3 {
+        font-size: 26px;
+    }
+
+    #photo-perso-1, #photo-perso-2, #photo-perso-3 {
+        width: 90px;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .stars-perso-1 img, .stars-perso-2 img, .stars-perso-3 img {
+        width: 25px;
+        height: auto;
+        padding-right: 3px;
+    }
+
+    .notice-perso-1 p, .notice-perso-2 p, .notice-perso-3 p {
+        font-size: 11px;
+    }
+
+    #notices-button button {
+        font-size: 12px ;
+
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .notice {
+        width: 100%;
+        height: auto;
+    }
+    
+    .notice h2 {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+
+    .notice-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .notice-1, .notice-2 {
+        margin-bottom: 25px;
+    }
+}
+/* -------------------------------------------------------- */

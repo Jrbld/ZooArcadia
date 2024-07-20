@@ -2,16 +2,183 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>{% block title %}Zoo Arcadia{% endblock %}</title>
+        <link rel="icon" href="{{ asset('build/images/arcadia-icon.png') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
         {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
         {% endblock %}
 
         {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
+            {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
+
     <body>
+
+        {# NAVBAR #}
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="{{ url('home') }}">
+                    <img src="{{ asset('build/images/whiteArcadiaLogo.png') }}" alt="Logo Arcadia">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="{{ url('home') }}">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('services') }}">Services</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('habitats') }}">Habitats</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('contact') }}">Contact</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('connexion') }}">
+                            <button class="connexion-button">Connexion</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            {# MENU "BURGER" #}
+            <div class="toggle-menu">
+                <a href="#menu-toggle" id="toggle"><span></span></a>
+                <div id="menu-toggle">
+                    <ul>
+                        <li><a href="{{ url('home') }}">Accueil</a></li>
+                        <li><a href="{{ url('services') }}">Services</a></li>
+                        <li><a href="{{ url('habitats') }}">Habitats</a></li>
+                        <li><a href="{{ url('contact') }}">Contact</a></li>
+                        <li><a href="{{ url('connexion') }}">Connexion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         {% block body %}{% endblock %}
+
+        {# FOOTER #}
+        <footer>
+            <div class="footer-logo">
+                <a href="{{ url('home') }}">
+                    <img src="{{ asset('build/images/whiteArcadiaLogo.png') }}" alt="Logo Arcadia">
+                </a>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img id="instagram" src="{{ asset('build/images/instagram.png') }}" alt="Logo Instagram" onmouseover="mouseOverInstagram(this)"; onmouseout="mouseOutInstagram(this)";>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img id="facebook" src="{{ asset('build/images/facebook.png') }}" alt="Logo Facebook" onmouseover="mouseOverFacebook(this)"; onmouseout="mouseOutFacebook(this)";>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img id="youtube" src="{{ asset('build/images/youtube.png') }}" alt="Logo YouTube" onmouseover="mouseOverYoutube(this)"; onmouseout="mouseOutYoutube(this)";>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img id="linkedin" src="{{ asset('build/images/linkedin.png') }}" alt="Logo Linkedin" onmouseover="mouseOverLinkedin(this)"; onmouseout="mouseOutLinkedin(this)";>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Copyright Ⓡ Jérémy Ballaud</p>
+            </div>
+        </footer>
+
+        {# SCRIPTS JS #}
+        <script>
+            /* -------------------------------------------------------- */
+            /* Changement d'image au survol des icônes de réseaux sociaux */
+            function mouseOverInstagram(instagram){
+                instagram.setAttribute('src', '../../build/images/instagram-hover.png');
+            }
+            function mouseOutInstagram(instagram){
+                instagram.setAttribute('src', '../../build/images/instagram.png');
+            }
+
+            function mouseOverFacebook(facebook){
+                facebook.setAttribute('src', '../../build/images/facebook-hover.png');
+            }
+            function mouseOutFacebook(facebook){
+                facebook.setAttribute('src', '../../build/images/facebook.png');
+            }
+
+            function mouseOverYoutube(youtube){
+                youtube.setAttribute('src', '../../build/images/youtube-hover.png');
+            }
+            function mouseOutYoutube(youtube){
+                youtube.setAttribute('src', '../../build/images/youtube.png');
+            }
+
+            function mouseOverLinkedin(linkedin){
+                linkedin.setAttribute('src', '../../build/images/linkedin-hover.png');
+            }
+            function mouseOutLinkedin(linkedin){
+                linkedin.setAttribute('src', '../../build/images/linkedin.png');
+                
+            }
+            /* -------------------------------------------------------- */
+
+
+            /* -------------------------------------------------------- */
+            /* Script Menu Toggle */
+            var theToggle = document.getElementById('toggle');
+
+            function hasClass(elem, className) {
+                return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+            }
+            
+            function addClass(elem, className) {
+                if (!hasClass(elem, className)) {
+                    elem.className += ' ' + className;
+                }
+            }
+            
+            function removeClass(elem, className) {
+                var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+                if (hasClass(elem, className)) {
+                    while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+                        newClass = newClass.replace(' ' + className + ' ', ' ');
+                    }
+                    elem.className = newClass.replace(/^\s+|\s+$/g, '');
+                }
+            }
+            
+            function toggleClass(elem, className) {
+                var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+                if (hasClass(elem, className)) {
+                    while (newClass.indexOf(" " + className + " ") >= 0 ) {
+                        newClass = newClass.replace( " " + className + " " , " " );
+                    }
+                    elem.className = newClass.replace(/^\s+|\s+$/g, '');
+                } else {
+                    elem.className += ' ' + className;
+                }
+            }
+
+            theToggle.onclick = function() {
+            toggleClass(this, 'on');
+            return false;
+            }
+            /* -------------------------------------------------------- */
+        </script>
+
     </body>
 </html>

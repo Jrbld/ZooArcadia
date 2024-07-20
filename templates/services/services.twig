@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('services') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('services') }}
+{% endblock %}
+
+{% block title %}Zoo Arcadia | Nos services{% endblock %}
+
+{% block body %}
+
+<header>
+    <p>Nos services</p>
+</header>
+
+<section class="services">
+    <h2>Le Zoo Arcadia vous propose des services accessibles à tous et toute la journée !</h2>
+    <div class="services-cards">
+        <a href="{{ path('services.show', {slug: 'visite-guidee'}) }}">
+            <div id="visite-card">
+                <p>Visite guidée</p>
+            </div>
+        </a>
+        <a href="{{ path('services.show', {slug: 'visite-petit-train'}) }}">
+            <div id="train-card">
+                <p>Tour de petit train</p>
+            </div>
+        </a>
+        <a href="{{ path('services.show', {slug: 'restauration'}) }}">
+            <div id="food-card">
+                <p>Restauration</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+{% endblock %}
