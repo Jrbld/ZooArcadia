@@ -21,7 +21,10 @@ header {
 }
 
 header p{
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 50px;
     color: white;
     text-align: center;
@@ -46,7 +49,10 @@ header p{
 }
 
 .habitats h2 {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
@@ -78,7 +84,10 @@ header p{
 }
 
 #jungle-card p, #savane-card p, #marais-card p {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     color: white;
     font-size: 30px;
     text-align: left;
@@ -172,12 +181,15 @@ header p{
     width: 50px;
     height: 50px;
     background-color: #1A7A30;
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 26px;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-radius: 50px;
 }
@@ -196,7 +208,10 @@ header p{
 }
 
 .jungle-title {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
@@ -209,7 +224,10 @@ header p{
 }
 
 .jungle-animals-title {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
@@ -253,7 +271,10 @@ header p{
 }
 
 #girafe-card p, #elephant-card p, #monkey-card p {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     color: white;
     font-size: 30px;
     text-align: left;
@@ -351,12 +372,15 @@ header p{
     width: 50px;
     height: 50px;
     background-color: #1A7A30;
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 26px;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-radius: 50px;
 }
@@ -375,7 +399,10 @@ header p{
 }
 
 .savane-title {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
@@ -388,7 +415,10 @@ header p{
 }
 
 .savane-animals-title {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
@@ -421,7 +451,10 @@ header p{
 }
 
 #lion-card p, #hipo-card p, #zebre-card p {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     color: white;
     font-size: 30px;
     text-align: left;
@@ -519,12 +552,15 @@ header p{
     width: 50px;
     height: 50px;
     background-color: #1A7A30;
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 26px;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-radius: 50px;
 }
@@ -543,7 +579,10 @@ header p{
 }
 
 .marais-title {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
@@ -556,7 +595,10 @@ header p{
 }
 
 .marais-animals-title {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
@@ -589,7 +631,10 @@ header p{
 }
 
 #croco-card p, #flamingo-card p, #turtle-card p {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     color: white;
     font-size: 30px;
     text-align: left;
@@ -759,12 +804,15 @@ header p{
     width: 50px;
     height: 50px;
     background-color: #1A7A30;
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 26px;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-radius: 50px;
 }
@@ -783,7 +831,10 @@ header p{
 }
 
 .animal-name {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
