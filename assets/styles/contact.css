@@ -21,7 +21,10 @@ header {
 }
 
 header p{
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 50px;
     color: white;
     text-align: center;
@@ -46,7 +49,10 @@ header p{
 }
 
 .contact h2 {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
 }
@@ -71,7 +77,10 @@ header p{
     align-items: left;
     background-color: #1A7A30;
     color: white;
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 22px;
     border-radius: 10px;
     overflow: auto;
@@ -85,7 +94,10 @@ header p{
 #submit-contact button {
     background-color: #B6B61B;
     color: white;
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 22px;
     padding: 10px;
     border: none;
@@ -122,7 +134,10 @@ header p{
 }
 
 .contact-infos h2 {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 22px;
     text-align: left;
 }

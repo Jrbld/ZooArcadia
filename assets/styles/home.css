@@ -21,7 +21,10 @@ header {
 }
 
 header p{
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 50px;
     color: white;
     text-align: center;
@@ -74,7 +77,10 @@ header p{
 }
 
 .resume-text h2 {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
 }
 
@@ -191,7 +197,10 @@ header p{
 }
 
 .infos h2 {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     color: #B6B61B;
@@ -398,7 +407,10 @@ header p{
 }
 
 .habitats-resume h2 {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
@@ -436,7 +448,10 @@ header p{
 
 #jungle-title, #savane-title, #marais-title {
     text-decoration: none;
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 32px;
     color: black;
 }
@@ -564,7 +579,10 @@ header p{
 }
 
 .notice h2 {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
@@ -610,7 +628,10 @@ header p{
 }
 
 .name-perso-1 h3, .name-perso-2 h3, .name-perso-3 h3 {
-    font-family: 'Config Rounded', sans-serif;
+    /* font-family: 'Config Rounded', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 32px;
     color: white;
     text-align: center;
